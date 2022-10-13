@@ -48,7 +48,7 @@
     height: 35px;
     text-align: center;
     line-height: 35px;
-    font-size: 18px;
+    font-size: 17px;
     color: #0d7bfd;
     transition: 0.3s all;
     transform: translateX(30px);
@@ -102,21 +102,25 @@
     }
     .btn-menu__wrapp{
         width: 46%;
-        text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
     }
     .list-group-item .fa-smile {
         width: 35px;
         height: 35px;
         text-align: center;
-        line-height: 35px;
-        font-size: 18px;
+        margin: 3px;
+        font-size: 17px;
         color: #9f968a;
+        border-radius: 0.2rem;
         transition: 0.3s all;
         background: #efefef;
         border: solid 1px #eee1e1;
         opacity: 1;
-         transform: translateX(0px);
-         pointer-events: all;
+        transform: translateX(0px);
+        pointer-events: all;
+        border: none;
     }
     .list-group-item.like  .fa-smile{
         color: #0d7bfd;
