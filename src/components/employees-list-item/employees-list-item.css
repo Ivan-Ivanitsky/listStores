@@ -1,0 +1,125 @@
+.list-group-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #3d5a80;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item span {
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.list-group-item input {
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+}
+
+.list-group-item button {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.list-group-item .btn-sad  {
+    color: #9f968a;
+}
+
+.list-group-item .btn-sad .active {
+    color: #ff8307;
+}
+
+.list-group-item .btn-trash {
+    color: #e5383b;
+}
+
+.list-group-item .fa-smile {
+    pointer-events: none;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #0d7bfd;
+    transition: 0.3s all;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.list-group-item.like .fa-smile{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.list-group-item.fall .list-group-item-label, .list-group-item.fall .list-group-item-input {
+    color: #ff8307;
+}
+  
+.list-group-item.increase .btn-star {
+    color: #aeaeae;
+}
+  
+@media(max-width:768px){
+
+     .list-group-item input {
+        max-width: 150px;
+        margin-left: 15px;
+    }
+ }
+
+ @media(max-width:576px){
+    .list-group-item{
+        flex-direction: column;
+    }
+    .list-group__wrapp-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .list-group-item input {
+        max-width: 50%;
+        margin-left: 15px;
+    }
+
+    .list-group__wrapp-item span{
+        width: 50%;
+        margin-left: 35px;
+    }
+    .list-group__wrapp-item .list-group-item-input{
+        width: 50%;
+    }
+    .btn-menu{
+        justify-content: center !important;
+    }
+    .btn-menu__wrapp{
+        width: 46%;
+        text-align: center;
+    }
+    .list-group-item .fa-smile {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        font-size: 18px;
+        color: #9f968a;
+        transition: 0.3s all;
+        background: #efefef;
+        border: solid 1px #eee1e1;
+        opacity: 1;
+         transform: translateX(0px);
+         pointer-events: all;
+    }
+    .list-group-item.like  .fa-smile{
+        color: #0d7bfd;
+    } 
+    
+ }
